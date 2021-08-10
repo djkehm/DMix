@@ -1,0 +1,67 @@
+.logo{
+    /*
+    Siempre que quieres que una imagen sea responsiva, defines solo una dimension de las dos
+    o defines el ancho y el alto automatico
+    o defines el alto y el ancho es automatico
+    */
+    height: 45px;
+    width: auto;
+} 
+
+.portada{
+    height: 500;
+    width: auto;
+}
+
+.fondo{
+    background-color: #000000;
+}
+
+.fondoFooter{
+    background-color: #000000;
+}
+
+.fondoFooterC{
+    background-color: #252525;
+}
+
+.fondoXD{
+    background-color: #141111;
+}
+.posi{
+    position: fixed;
+}
+.centro{
+    display:block;
+    margin:auto;
+}
+.alpha2{
+    background-color: rgba(0, 0, 0, 0.425);
+}
+.alpha{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.image-fondo2 {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+
+}
+.image-fondo {
+    background-image: url("../img/fondo2.png");
+    background-size: cover;
+
+}
+.footer{
+    background-color: #000000;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    text-emphasis-color: white;
+}
+#sticky-sidebar {
+    position:fixed;
+    max-width: 20%;
+}
+

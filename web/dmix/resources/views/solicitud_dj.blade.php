@@ -1,0 +1,58 @@
+@extends('layouts.master')
+
+@section('contenido')
+
+<body>
+    <div class="row mt-5">
+        <div class="row mt-5">
+            <div class="mt-3">
+                <div class="col-8 col-md-5 col-lg-4 mx-auto">
+                    <div class="card alpha2">
+                        <div class="card-header alpha2 text-light text-center">
+                            <span>SOLICITAR DJ</span>
+                        </div>
+                    </div>
+                    <div class="card-body alpha">
+                        <div class="mb-4">
+                            <label for="nombre-txt" class="form-label text-light">Nombre</label>
+                            <input type="text" id="nombre-txt" class="form-control" placeholder="Nombre Apellido">
+                        </div>
+                        <div class="mb-4">
+                            <label for="user-txt" class="form-label text-light">Nombre DJ</label>
+                            <input type="text" id="dj-txt" class="form-control" placeholder="A.K.A DJ">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email-txt" class="form-label text-light">Correo electronico</label>
+                            <input type="text" id="email-txt" class="form-control" placeholder="email@example.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="fecha-txt" class="form-label text-light">Fecha de nacimiento</label>
+                            <input type="date" id="fecha-txt" class="form-control">
+                        </div>
+                        <div class="mb-4">
+                            <label for="descripcion-txt" class="form-label text-light">Describa su estilo</label>
+                            <textarea type="text"class="form-control" id="descripcion-txt" rows="3"></textarea>
+                        </div>
+                        <div class="card-footer d-grid gap-1 mb-4 text-center">
+                            <button id="enviarDJ-btn" class="btn btn-outline-info text-center">Enviar solicitud</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="mt-5">
+            
+        </div>
+    
+    </div>
+</body>
+    
+@endsection
+
+
+@section("javascript")
+    <script src="{{asset('js/service/solicitudDJService.js')}}"></script>
+    <script src="{{asset('js/solicitudDJ.js')}}"></script>
+@endsection
